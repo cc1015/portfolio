@@ -3,31 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photo Gallery</title>
+    <title>Collage</title>
     <style>
-        /* Optional CSS for styling */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f2f2f2;
-        }
-        .gallery {
+        /* Style your collage container */
+        .collage {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            grid-gap: 20px;
-            padding: 20px;
+            grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+            gap: 10px; /* Adjust the gap between images */
         }
-        .gallery img {
-            width: 50%;
+
+        /* Style your images */
+        .collage img {
+            width: 100%;
             height: auto;
-            border-radius: 5px;
+            border-radius: 5px; /* Add border-radius for rounded corners */
+        }
+
+        /* Style the container for multiple images in one cell */
+        .collage-cell {
+            display: flex;
+            flex-direction: column; /* Stack images vertically */
+        }
+
+        /* Style individual images inside the container */
+        .collage-cell img {
+            width: 100%; /* Adjust width as needed */
+            height: auto;
+            border-radius: 5px; /* Add border-radius for rounded corners */
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
-    <div class="gallery">
-        <img src="DSC_0026.jpg" alt="Photo 1">
+    <div class="collage">
+        <img src="DSC_0538.jpg" alt="Image 3">
+        <div class="collage-cell">
+            <img src="DSC_0544.jpg" alt="Image 1">
+            <img src="DSC_0549.jpg" alt="Image 1">
+        </div>
+        <div class="collage-cell">
+            <img src="DSC_0474.jpg" alt="Image 1">
+            <img src="DSC_0620.jpg" alt="Image 1">
+        </div>
+
+        <img src="DSC_0151.jpg" alt="Image 1">
+        <img src="DSC_0165.jpg" alt="Image 2">
+        <img src="DSC_0186.jpg" alt="Image 1">
+
+        <img src="DSC_0275.jpg" alt="Image 3">
+        <div class="collage-cell">
+            <img src="DSC_0268.jpg" alt="Image 3">
+            <img src="DSC_0215.jpg" alt="Image 2">
+        </div>
+        <img src="DSC_0166.jpg" alt="Image 3">
+
+
+        <img src="DSC_0057.jpg" alt="Image 2">
+        <div class="collage-cell">
+            <img src="DSC_0026.jpg" alt="Image 1">
+            <img src="DSC_0068.jpg" alt="Image 3">
+        </div>
+
+        <img src="DSC_0479.jpg" alt="Image 2">
+        <img src="DSC_0480.jpg" alt="Image 1">
+
+        <img src="DSC_0484.jpg" alt="Image 2">
+        <div class="collage-cell">
+            <img src="/DSC_0496.jpg" alt="Image 3">
+            <img src="DSC_0497.jpg" alt="Image 2">
+        </div>
+
+        <img src="DSC_0577.jpg" alt="Image 2">
+        <img src="DSC_0611.jpg" alt="Image 3">
+        <img src="DSC_0613.jpg" alt="Image 3">
+        <img src="DSC_0622.jpg" alt="Image 2">
+        <img src="DSC_0702.jpg" alt="Image 1">
+        <img src="DSC_0704.jpg" alt="Image 2">
         <!-- Add more images as needed -->
     </div>
 </body>
